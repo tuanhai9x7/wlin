@@ -1046,7 +1046,7 @@
         var checkScroll = function () {
           curScroll = w.scrollY || doc.scrollTop;
 
-          if (curScroll == 0) {
+          if (curScroll < 80) {
             header.style.backgroundColor = "transparent";
           }
           if (curScroll > prevScroll) {
